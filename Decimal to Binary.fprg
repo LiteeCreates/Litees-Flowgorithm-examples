@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-07-28 08:57:41 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC1QRjlFMFFEOzIwMjItMDctMjg7MDU6NDQ6MjcgUE07MjQ5Mg=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC1QRjlFMFFEOzIwMjItMDctMjg7MDg6NTc6NDEgUE07MTsyNjAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, r" type="Integer" array="False" size=""/>
+            <declare name="q" type="Real" array="False" size=""/>
+            <declare name="t" type="String" array="False" size=""/>
+            <assign variable="q" expression="1.0"/>
+            <assign variable="r" expression="0"/>
+            <assign variable="t" expression="&quot;&quot;"/>
+            <input variable="n"/>
+            <while expression="q&gt;=1">
+                <assign variable="q" expression="n/2"/>
+                <assign variable="r" expression="n%2"/>
+                <assign variable="n" expression="int(q)"/>
+                <assign variable="t" expression="t&amp;toString(r)"/>
+            </while>
+            <output expression="t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

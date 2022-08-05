@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="PC"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-08-05 07:05:15 PM"/>
+        <attribute name="created" value="UEM7REVTS1RPUC1QRjlFMFFEOzIwMjItMDgtMDU7MDY6MzE6MjYgUE07MjQ4NA=="/>
+        <attribute name="edited" value="UEM7REVTS1RPUC1QRjlFMFFEOzIwMjItMDgtMDU7MDc6MDU6MTUgUE07MjsyNTkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, a, i, d, ni" type="Integer" array="False" size=""/>
+            <declare name="ns" type="String" array="False" size=""/>
+            <assign variable="a" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="d" expression="0"/>
+            <input variable="n"/>
+            <assign variable="ns" expression="toString(n)"/>
+            <for variable="i" start="0" end="len(ns)-1" direction="inc" step="1">
+                <assign variable="ni" expression="toInteger(char(ns,i))"/>
+                <assign variable="a" expression="(d*2)+ni"/>
+                <assign variable="d" expression="a"/>
+            </for>
+            <output expression="d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
